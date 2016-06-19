@@ -1,0 +1,103 @@
+.footer_common{
+	height:145px;
+	width: 100%;
+	background: rgba(#373e42, .8);
+	position: absolute;
+	bottom:0;
+	left: 0;
+}
+
+.footer_container{
+    max-width: 1800px;
+    margin: 0 auto;
+    height: 100%;
+    padding-top: 30px;
+    
+}
+
+.contact_info_block{
+    font-family: 'robotothin';
+    margin: 0;
+}
+
+
+.common_footer_class{
+	display: inline-block;
+	border-right: 1px solid rgba(#fff, .5);
+	min-height: 87px;
+	vertical-align: middle;
+	width: 29.333333%;
+    position: relative;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0;
+}
+
+.common_footer_class:last-child{
+	border-right:none;
+}
+
+.contact_info_block{
+	font-family: "RobotoLight";
+    margin-bottom: 15px;
+   
+}
+
+.info_for_me{
+	opacity: .5;
+    font-family: "RobotoLight";
+}
+
+.info_nav{
+	padding:0 0 40px 0 ;
+	margin: 0;
+	list-style: none;
+}
+
+.info_nav_link{
+	text-decoration: none;
+	color:$color_link;
+	opacity: .5;
+	padding-right: 10px;
+	cursor: pointer;
+
+}
+
+.info_nav_link:hover,.info_social_item:hover{
+	opacity: 1;
+}
+
+
+.info_nav_link:last-child{
+	padding-right: 0;
+}
+
+.info_social{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.info_social_item{
+	padding-right: 25px;
+	opacity: .5;
+}
+.info_social_item:last-child{
+	margin-right: 0;
+}
+
+ 
+.info_social_item,.info_nav_item{
+display:inline-block;
+}
+
+.cont_skupe,.cont_number,.city_name{
+	opacity: .5;
+	margin-bottom: 2px;
+}
+
+
+
+
+
+

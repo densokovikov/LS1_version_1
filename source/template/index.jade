@@ -1,11 +1,66 @@
+//- welcome.jade
 doctype html
 html
-  include common/_head
-  body
-    <!--[if lt IE 7]>
-    <p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите его</a></p>
-    <![endif]-->
-
-    .greating
-      .greating_text Hello! I'm your training builder.
-      .greating_picture
+include common/_head
+body
+	<!--[if lt IE 7]>
+	<p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите его</a></p>
+	<![endif]-->
+	.wel_wrapper
+		.author
+			a(href="#").author__link Авторизироваться
+		.wel-info
+			.wel-info_front.wel_com
+						.wel-info_front_foto
+							img(src="../assets/img/my_foto.jpg",alt="my_foto").we_foto
+						.wel-info_front_name Соковиков Денис
+						.wel-info_front_pract Личный сайт разработчика
+						//.wel_front_icons
+							ul.front_icons
+								li.icons_item
+									a.icons_item_link(href="https://vk.com") VK
+									svg VK
+								li.icons_item
+									a.icons_item_link(href="https://githab.com") GIT
+									svg
+								li.icons_item
+									a.icons_item_link(href="https://www.linkedin.com") IN
+									svg
+						.wel_menu
+							ul.wel_menu_nav
+								li.wel_menu_item
+									a.wel_menu_link(href="work.html") Мои работы
+								li.wel_menu_item
+									a.wel_menu_link(href="about.html") Обо мне
+								li.wel_menu_item
+									a.wel_menu_link(href="blog.html") Блог
+			.wel-info_me_back.wel_com
+				.form_title_wel Авторизируйтесь
+				form.form_author_wel
+					.form_body
+						.form_author_wrap
+							.form_box
+								svg.icon.login
+									use(xlink:href='assets/icons/sprite.svg#login')		
+							input(type="text" class="form_input" placeholder="логин")
+						.form_author_wrap
+							.form_box
+								svg.icon.pass
+									use(xlink:href='assets/icons/sprite.svg#password')			
+							input(type="password" class="form_input" placeholder="password")
+						input#man(type="checkbox" class="hitten_input" placeholder="логин")
+						label.form_man(for='man') <span class="form_check_icons"><svg class="icon chk"><use xlink:href="assets/icons/sprite.svg#check"></use></svg></span> Я человек
+						.robot Вы точно не робот
+						.radios_form
+							input#yes(type='radio' name='sure' value='yes')
+							label.radio_f(for='yes') ДА
+							input#no(type='radio' name='sure' value='no')
+							label.radio_f(for='no') Не уверен
+				ul.form_nav
+					li.form_nav_list
+						a#main.link_form(href='index.html') На главную
+					li.form_nav_list
+						a.link_form(href='#!') Войти
+		.footer_welcome
+			.footer_welcome_text ©Денис Соковиков | создано с любовью в LoftSchol |2016
+		

@@ -1,0 +1,15 @@
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+
+@mixin descr_link
+{
+text-decoration:none; 
+color: #fff;
+}
+// для вызова нашего миксина используем @include

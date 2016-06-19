@@ -1,0 +1,102 @@
+.header_common{
+	position: relative;
+	background-image:  url("../img/header_bg.jpg");//, url("../img/d.jpg");
+	background-position: 50% 35%;
+	background-repeat:no-repeat;
+	width: 100%;
+	height: 600px;
+	background-size: cover;
+	//z-index:1;
+}
+/*.portf_bg{
+	background: url("../img/port_bg.png") no-repeat;
+	width: 100%;
+	height: 500px;
+	background-size: cover;	
+	z-index:2;
+	gamburger
+}*/
+
+.header_info_me{
+	position: relative;
+	color:$color_link;
+	//border:1px solid red;
+	text-align:center;
+}
+
+.header_avatar{
+  margin:30px auto ;
+  padding: 0;
+  position: relative;
+  width: 141px;
+  height: 141px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.header_foto{
+ max-width:100%;
+ }
+
+ .header_name{
+  margin-bottom: 10px;
+  font:500 28px/34px roboto;
+ }
+
+.header_descr{
+  opacity: 0.8;
+  font: 400 16px/24px roboto;
+}
+
+.header_icons{
+	padding-top:28px;
+}
+
+.header_icons:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.header_social{
+	list-style: none;
+	display:block;
+	margin: 0;
+	padding: 0;
+	float:left;
+	margin-left:30px;
+}
+
+.social_item{
+	display: inline-block;
+	vertical-align: middle;
+	margin-left:27px;
+	cursor:pointer;
+}
+
+.social_item:first-child{
+	margin-left:0;
+}
+
+.gamburger{
+	background-image:  url("../img/gamburger.png");
+	background-repeat:no-repeat;
+	width: 45px;
+	height: 35px;
+	float:right;
+	margin-right:30px ;
+	cursor:pointer;
+}
+
+.header_icons{
+	margin-bottom:30px;
+}
+.link,.vk,.in,.github {
+    width: 26px;
+    height: 22px;
+    opacity: .8;
+  }
+  	&:hover{
+  		opacity: 1;
+ 
+  	}

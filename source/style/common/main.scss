@@ -1,0 +1,386 @@
+html,
+body{
+  height: 100%;
+  font-size: 16px;
+  color: #fff;
+  font-family: "RobotoMedium", Arial, sans-serif;
+  position: relative;
+  }
+$color_link:#fff;
+
+
+.wel_wrapper{
+  background: url(../img/welcome_background.jpg) top left;
+  background-repeat: repeat-x;
+  background-size: cover;
+  height: 100%;
+  position: relative;
+  display: flex;
+}
+
+/*----auth-------*/
+.author{
+  width: 178px;
+  height: 43px;
+  border: 1px solid #fff;
+  text-align:center;
+  font: 500 16px/43px roboto;
+  position: absolute;
+  top: 24px;
+  right: 100px;
+  border-radius:5px;
+}
+
+.author:hover{
+  background-color: #FFF;
+}
+
+.auuthor_link:hover{
+  color:#d28f26;
+}
+
+
+.author__link{
+  text-decoration: none;
+  display: block;
+  color: #fbf9f5;
+  font-size: 18px;
+  font-family:"SansusWebissimoRegular";
+  
+}
+
+
+/*-------wel_info-----------*/
+ .wel-info{
+    position: relative;
+    width: 380px;
+    height: 395px;
+    margin: auto;
+    text-align:center;
+    transform-origin: top center;
+    transition: -webkit-transform 1s;
+    transform-style: preserve-3d;
+    color:$color_link;
+}
+.wel-info_front{
+  //position: absolute;
+  display: block; 
+  z-index:2;
+}
+
+.wel-info_me_back{
+    z-index: 1;
+    transform: rotateY(180deg);
+    //position: absolute;
+}
+
+
+/*-----class при повороте-------*/
+
+.flap{
+  transform: rotateY( 180deg );
+}
+.wel_com{
+  backface-visibility: hidden;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: block;
+  border-color: #d7bf9b;
+  background: rgba(#d7bf9b, .6);
+  border-radius:5px;
+}
+
+.clicked {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.wel-info_front_foto{
+  margin: 40px auto 20px;
+  padding: 0;
+  position: relative;
+  width: 141px;
+  height: 141px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.we_foto{
+  max-width:100%;
+ }
+
+.wel-info_front_name{
+  margin-bottom: 10px;
+  font:500 28px/34px roboto;
+}
+
+.wel-info_front_pract{
+  opacity: 0.8;
+  font: 400 16px/24px "RobotoRegular";
+}
+
+/*-------welcome_icons---------*/
+.wel_front_icons{
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/*-------welcome_menu---------*/
+.wel_menu_nav{
+  list-style: none;
+  width: 380px;
+  display: table;
+  position: absolute;
+  bottom:0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  
+}
+
+.wel_menu_item{
+  display: table-cell;
+  padding:0;
+  margin: 0;
+  border-right: 1px solid rgba(#e4c98f, .5);
+  background: rgba(#ebae37,1);
+  cursor: pointer;
+  text-align:center;
+  width: 33.333%;
+}
+
+.wel_menu_item:hover{
+ background: rgba(#d28f26,1);
+}
+.wel_menu_link{
+  text-decoration: none;
+  height: 45px;
+  line-height: 45px;
+  display: block;
+  color:$color_link;
+}
+
+.wel_menu_item:last-child{
+  border: none;
+}
+
+/*---wel-info_me_back-----*/
+
+.form_title_wel{
+  position: relative;
+  color:$color_link;
+  font: 400 30px/41px roboto;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.form_title_wel:before{
+  content:'';
+  width: 21px;
+  height: 10px;
+  background: url(../img/back_auto.png) no-repeat center;
+  position: absolute;
+  opacity: .4;
+  top: 45%;
+  left: 20px;
+  
+}
+
+
+.form_title_wel:after{
+  content:'';
+  width: 21px;
+  height: 10px;
+  background: url(../img/back_auto.png) no-repeat center;
+  position: absolute;
+  opacity: .4;
+  top: 45%;
+  right: 20px;
+}
+
+.form_author_wel{
+  display: block;
+ 
+}
+
+.form_body{
+  padding: 0 20px;
+}
+
+.form_author_wrap{
+  position: relative;
+  margin-bottom: 20px;
+}
+.form_box{
+  width: 45px;
+  height: 45px;
+  background: #f0efe9;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align:middle;
+  margin-bottom:2px;
+}
+
+.form_input{
+  max-width: 270px;
+  height: 45px;
+  margin-bottom: 20px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  overflow: hidden;
+  padding: 0 0 0 20px;
+  font: 400 16px roboto;
+  color: #373e42;
+  border: 0;
+  outline: 0;
+  display: inline-block;
+  vertical-align:middle;
+  margin-bottom:2px;
+  margin-left: -5px;
+}
+.hitten_input{
+  //display: none
+}
+
+.svg_icons{
+  width: 12px;
+  height: 9px;
+  display: none;
+}
+
+.login,.pass{
+  width: 15px;
+  height: 17px;
+  padding-top:13px;
+}
+
+.form_man{
+  width: 100%;
+  vertical-align:top;
+  padding-bottom: 20px;
+}
+.form_check_icons{
+content: '';
+display: inline-block;
+width: 21px;
+height: 20px;
+margin-right: 11px;
+margin-bottom: 10px;
+box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.8);
+background-color: transparent;
+border-radius: 2px;
+color: #fff;
+display: inline-block;
+}
+
+
+.robot{
+  position: relative;
+  width: 100%;
+  text-align: center;
+  font: 400 16px roboto;
+  color: rgba(#fff, 0.8);
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.form_check_icons{
+  background:#e7a731;
+  width: 21px;
+  height: 20px;
+  box-shadow: none;
+}
+
+
+.chk {
+  width: 12px;
+  height: 9px;
+  display: none;
+  fill:#fff;
+  padding-bottom:2px ;
+}
+
+        .radios_form{
+          cursor: default;
+          width: 100%;
+          text-align: center;
+          font-size: 0;
+          input[type="radio"] {
+            display: none;
+            &:checked + .radio_f:before {
+              box-shadow: inset 0px 0px 0px 5px rgba(#fff, 1);
+            }
+          }
+          label[for="yes"] {
+            margin-right: 40px;
+          }
+          .radio_f {
+            font: 400 16px roboto;
+            color: rgba(255, 255, 255, .8);
+            cursor: pointer;
+            &:before {
+              content: '';
+              display: inline-block;
+              border: 1px solid #ccc;
+              border-radius: 50%;
+              background-color: #e7a731;
+              box-shadow: inset 0px 0px 0px 15px rgba(255, 255, 255, 1);
+              width: 18px;
+              height: 18px;
+              margin-right: 10px;
+              vertical-align: -5px;
+              transition: all .1s;
+            }
+          }
+        }
+.form_nav{
+  list-style:none ;
+  width: 100%;
+  display: table;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.form_nav_list{
+  display: inline-block;
+  text-align:center;
+  display: table-cell;
+  width: 50%;
+  padding:0;
+  border-right: 1px solid rgba(#e4c98f, .5);
+  background: #ebae37;
+  cursor: pointer;
+  
+}
+
+.link_form{
+  text-decoration: none;
+  color:$color_link;
+  display: block;
+  height: 45px;
+  line-height: 45px;
+  text-align:center;
+  
+}
+
+/*---footer-----*/
+.footer_welcome {
+  position: absolute;
+  left: 38%;
+  bottom: 2%;
+  text-align: center;
+}
+
+.footer_welcome_text{
+font: 400 16px;
+font-family: "RobotoLight";
+color:$color_link;
+opacity: .8;
+}
