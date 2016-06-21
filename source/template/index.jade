@@ -15,17 +15,20 @@ body
 							img(src="../assets/img/my_foto.jpg",alt="my_foto").we_foto
 						.wel-info_front_name Соковиков Денис
 						.wel-info_front_pract Личный сайт разработчика
-						//.wel_front_icons
+						.wel_front_icons
 							ul.front_icons
 								li.icons_item
-									a.icons_item_link(href="https://vk.com") VK
-									svg VK
+									a.icons_item_link(href="https://vk.com")
+									svg.icon.vk
+										use(xlink:href='assets/icons/sprite.svg#vk')
 								li.icons_item
-									a.icons_item_link(href="https://githab.com") GIT
-									svg
+									a.icons_item_link(href="https://githab.com")
+									svg.icon.vk
+										use(xlink:href='assets/icons/sprite.svg#github')
 								li.icons_item
-									a.icons_item_link(href="https://www.linkedin.com") IN
-									svg
+									a.icons_item_link(href="https://www.linkedin.com")
+									svg.icon.vk
+										use(xlink:href='assets/icons/sprite.svg#in')
 						.wel_menu
 							ul.wel_menu_nav
 								li.wel_menu_item
@@ -53,7 +56,7 @@ body
 						.robot Вы точно не робот
 						.radios_form
 							input#yes(type='radio' name='sure' value='yes')
-							label.radio_f(for='yes') ДА
+							label.radio_f(for='yes') Да
 							input#no(type='radio' name='sure' value='no')
 							label.radio_f(for='no') Не уверен
 				ul.form_nav

@@ -7,4 +7,56 @@ body
 	<p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите его</a></p>
 	<![endif]-->
 include ../common/_header
+
+section.about_section
+	.about_section_container
+		.left_side
+			//.left_bg
+				svg.icon.about_bg_left
+					use(xlink:href='assets/icons/sprite.svg#about_bg_left')
+			.left_title ОБО МНЕ
+				//.left_title_bg
+			.left_info_me
+				.left_avatar
+					img(src="../assets/img/my_foto.jpg",alt="my_foto").about_my_foto
+				.left_text
+					.left_text_title Кто я
+					p.left_text_block Я веб разработчик из Санкт-Петербурга. Мне 26 лет.Я учусь разрабатывать современные сайты.Учусь вместе с прекрасной школой LoftSchool.
+					p.left_text_block Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
+
+		.right_side
+			.right_bg
+			.right_title Чем я могу быть вам полезен
+			.right_text Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачина Backend. Но давайте по порядку.
+			.right_diagrams
+				.right_skill_frontend
+					.title_frontend Frontend
+					.front_diagrams
+						.front_item
+							img(src="../assets/img/diagrams.png")
+						.front_item
+							img(src="../assets/img/diagrams.png")
+						.front_item
+							img(src="../assets/img/diagrams.png")
+				.right_skill_backend
+					.title_backend Backend
+					.back_diagrams
+						.back_item
+							img(src="../assets/img/diagrams.png")
+						.back_item
+							img(src="../assets/img/diagrams.png")
+						.back_item
+							img(src="../assets/img/diagrams.png")
+				.right_skill_workwow
+					.title_workwow Workwow
+					.workw_diagrams
+						.workw_item
+							img(src="../assets/img/diagrams.png")
+						.workw_item
+							img(src="../assets/img/diagrams.png")
+						.workw_item
+							img(src="../assets/img/diagrams.png")
+section.about_maps
+	//.maps_contact
+		<div id="map" class="map-wrapper">
 include ../common/_footer

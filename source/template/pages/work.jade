@@ -7,4 +7,31 @@ body
 	<p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите его</a></p>
 	<![endif]-->
 include ../common/_header
+main.my_work
+	.my_work_title_block
+		.my_work_title Мои работы
+		svg.icon.works
+			use(xlink:href='assets/icons/sprite.svg#works_header') 
+	section.my_work_left
+		.left_conteiner
+			.left_title_w сайт бара "венеция"
+			.left_descr html,css,javascript
+			.conteiner_link
+				a.left_a(src="#") Просмотреть сайт
+					svg.icon.link
+						use(xlink:href='assets/icons/sprite.svg#link') 
+	section.my_work_porfol
+		.porfol_container
+			img(src="../assets/img/portf.png")
+	section.my_work_nav
+		.nav_prev
+			//img.nav_prev_img(src="../accets/img/")
+		.nav_next		
+			//img.nav_prev_img
+	section.say_for_me
+		.for_me_block_container
+			.for_me_title_block
+				.for_me_title что говорят  обо мне
+		.for_me_text
+
 include ../common/_footer

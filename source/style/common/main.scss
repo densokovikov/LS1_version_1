@@ -75,8 +75,6 @@ $color_link:#fff;
 }
 
 
-/*-----class при повороте-------*/
-
 .flap{
   transform: rotateY( 180deg );
 }
@@ -119,13 +117,27 @@ $color_link:#fff;
 .wel-info_front_pract{
   opacity: 0.8;
   font: 400 16px/24px "RobotoRegular";
+  margin-bottom: 25px;
 }
 
 /*-------welcome_icons---------*/
-.wel_front_icons{
-  position: absolute;
-  left: 0;
-  top: 0;
+//.wel_front_icons{
+  //position: absolute;
+  //left: 0;
+  //top: 0;
+//}
+
+.front_icons{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.icons_item{
+  display: inline-block;
+  opacity: 0.8;
+  cursor: pointer;
+  margin-right: 20px;
 }
 
 /*-------welcome_menu---------*/
@@ -227,7 +239,7 @@ $color_link:#fff;
 }
 
 .form_input{
-  max-width: 270px;
+  width: 270px;
   height: 45px;
   margin-bottom: 20px;
   border-top-right-radius: 5px;
@@ -250,7 +262,7 @@ $color_link:#fff;
 .svg_icons{
   width: 12px;
   height: 9px;
-  display: none;
+  //display: none;
 }
 
 .login,.pass{
@@ -373,7 +385,7 @@ display: inline-block;
 /*---footer-----*/
 .footer_welcome {
   position: absolute;
-  left: 38%;
+  left: 39%;
   bottom: 2%;
   text-align: center;
 }
