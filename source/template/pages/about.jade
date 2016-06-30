@@ -9,54 +9,103 @@ body
 include ../common/_header
 
 section.about_section
-	.about_section_container
 		.left_side
-			//.left_bg
-				svg.icon.about_bg_left
-					use(xlink:href='assets/icons/sprite.svg#about_bg_left')
-			.left_title ОБО МНЕ
-				//.left_title_bg
-			.left_info_me
-				.left_avatar
-					img(src="../assets/img/my_foto.jpg",alt="my_foto").about_my_foto
-				.left_text
-					.left_text_title Кто я
-					p.left_text_block Я веб разработчик из Санкт-Петербурга. Мне 26 лет.Я учусь разрабатывать современные сайты.Учусь вместе с прекрасной школой LoftSchool.
-					p.left_text_block Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
+			.left_side_container
+				.left_title ОБО МНЕ
+				.left_info_me
+					.left_avatar
+						img(src="../assets/img/my_foto.jpg",alt="my_foto").about_my_foto
+					.left_text
+						.left_text_title Кто я
+						p.left_text_block Я веб разработчик из Санкт-Петербурга. Мне 26 лет.Я учусь разрабатывать современные сайты.Учусь вместе с прекрасной школой LoftSchool.
+						p.left_text_block Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
 
 		.right_side
-			.right_bg
-			.right_title Чем я могу быть вам полезен
-			.right_text Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачина Backend. Но давайте по порядку.
-			.right_diagrams
-				.right_skill_frontend
-					.title_frontend Frontend
-					.front_diagrams
-						.front_item
-							img(src="../assets/img/diagrams.png")
-						.front_item
-							img(src="../assets/img/diagrams.png")
-						.front_item
-							img(src="../assets/img/diagrams.png")
-				.right_skill_backend
-					.title_backend Backend
-					.back_diagrams
-						.back_item
-							img(src="../assets/img/diagrams.png")
-						.back_item
-							img(src="../assets/img/diagrams.png")
-						.back_item
-							img(src="../assets/img/diagrams.png")
-				.right_skill_workwow
-					.title_workwow Workwow
-					.workw_diagrams
-						.workw_item
-							img(src="../assets/img/diagrams.png")
-						.workw_item
-							img(src="../assets/img/diagrams.png")
-						.workw_item
-							img(src="../assets/img/diagrams.png")
+			.right_side_container
+				.right_bg
+				.right_title Чем я могу быть вам полезен
+				.right_text Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачина Backend. Но давайте по порядку.
+				.right_diagrams
+					.right_skill_frontend
+						.title_diagrams Frontend
+						.front_diagrams
+							.svg_item 
+								svg.circle(viewBox="0 0 120 120")
+									circle.bottom(cx='60' cy='60' r='50' fill="transparent" stroke-dasharray="314.15" stroke-dashoffset="0")
+									circle.cover(cx='60' cy='60' r='50' fill="transparent" stroke-dasharray="120" stroke-dashoffset="10")
+									.skill HTML5
+							.svg_item 
+								svg.circle(viewBox="0 0 120 120")
+									circle.bottom(cx='60' cy='60' r='50' fill="transparent" stroke-dasharray="314.15" stroke-dashoffset="0")
+									circle.cover(cx='60' cy='60' r='50' fill="transparent" stroke-dasharray="148" 
+									stroke-dashoffset="120")
+									.skill CSS3
+							.svg_item 
+								svg.circle(viewBox="0 0 120 120")
+									circle.bottom(cx='60' cy='60' r='50' fill="transparent" stroke-dasharray="314.15" stroke-dashoffset="0")
+									circle.cover(cx='60' cy='60' r='50' fill="transparent" stroke-dasharray="205.15" stroke-dashoffset="120")
+									.skill JavaScript & JQuery
+					.right_skill_backend
+						.title_diagrams Backend
+						.back_diagrams
+							.svg_item 
+								svg.circle(viewBox="0 0 120 120")
+									circle.bottom(cx='60' cy='60' r='50' fill="transparent" stroke-dasharray="314.15" stroke-dashoffset="0")
+									circle.cover(cx='60' cy='60' r='50' fill="transparent" stroke-dasharray="314.15" stroke-dashoffset="0")
+									.skill PHP
+							.svg_item 
+								svg.circle(viewBox="0 0 120 120")
+									circle.bottom(cx='60' cy='60' r='50' fill="transparent" stroke-dasharray="314.15" stroke-dashoffset="0")
+									circle.cover(cx='60' cy='60' r='50' fill="transparent" stroke-dasharray="205.15" stroke-dashoffset="120")
+									.skill MySql
+							.svg_item 
+								svg.circle(viewBox="0 0 120 120")
+									circle.bottom(cx='60' cy='60' r='50' fill="transparent" stroke-dasharray="314.15" stroke-dashoffset="0")
+									circle.cover(cx='60' cy='60' r='50' fill="transparent" stroke-dasharray="205.15" stroke-dashoffset="120")
+									.skill Node.js
+					.right_skill_workwow
+						.title_diagrams Workwow
+						.workw_diagrams
+							.svg_item 
+								svg.circle(viewBox="0 0 120 120")
+									circle.bottom(cx='60' cy='60' r='50' fill="transparent" stroke-dasharray="314.15" stroke-dashoffset="0")
+									circle.cover(cx='60' cy='60' r='50' fill="transparent" stroke-dasharray="205.15" stroke-dashoffset="120")
+									.skill Mongo.db
+							.svg_item 
+								svg.circle(viewBox="0 0 120 120")
+									circle.bottom(cx='60' cy='60' r='50' fill="transparent" stroke-dasharray="314.15" stroke-dashoffset="0")
+									circle.cover(cx='60' cy='60' r='50' fill="transparent" stroke-dasharray="205.15" stroke-dashoffset="120")
+									.skill GIT
+							.svg_item 
+								svg.circle(viewBox="0 0 120 120")
+									circle.bottom(cx='60' cy='60' r='50' fill="transparent" stroke-dasharray="314.15" stroke-dashoffset="0")
+									circle.cover(cx='60' cy='60' r='50' fill="transparent" stroke-dasharray="205.15" stroke-dashoffset="120")
+									.skill GULP
 section.about_maps
-	//.maps_contact
-		<div id="map" class="map-wrapper">
+	.maps_contact
+		.maps_title_cont
+			.maps_title Контакты
+		ul.maps_nav
+			li.maps_item
+				a(href="#")
+					svg.icon.skp
+						use(xlink:href='assets/icons/sprite.svg#skype')
+					span.maps_cont_text den.sokovikov
+			li.maps_item
+				a(href="#")
+					svg.icon.evn
+						use(xlink:href='assets/icons/sprite.svg#envelope2')
+					span.maps_cont_text densokovikov@yandex.ru
+			li.maps_item
+				a(href="#")
+					svg.icon.phone
+						use(xlink:href='assets/icons/sprite.svg#phone2')
+					span.maps_cont_text +79336445713
+			li.maps_item
+				a(href="#")
+					svg.icon.marker
+						use(xlink:href='assets/icons/sprite.svg#map_marker')
+					span.maps_cont_text Санкт-Петербург,ул.Гагарина,д.7
+	#map
+
 include ../common/_footer

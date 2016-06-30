@@ -3,7 +3,7 @@ html {
     min-height: 100%;
 }
 body{
-	 margin: 0 0 145px;
+	 margin: 0;
 	 position: relative;
 }
 
@@ -13,10 +13,9 @@ body{
 .about_section{
 	position: relative;
 	width: 100%;
-	height: 854px;
     padding-top: 20px;
     margin: auto;
-    height: 854px;
+    
 }	
 
 .about_section:after {
@@ -25,13 +24,25 @@ body{
     clear: both;
   }
 
+
 .left_side{
 	width: 50%;
+    height: 100%;
 	float: left;
 	margin: 0;
 	padding: 0;
 	background: rgba(#efeee9, 1);
-       vertical-align:middle;
+    vertical-align:middle;
+    
+}
+.left_side_container{
+    height: 100%;
+}
+
+.about_bg_left{
+    width: 50%;
+    height: 600px;
+    fill:#000;
 }
 
 .left_avatar{
@@ -87,7 +98,7 @@ body{
     width: 40px;
     height: 14px;
     margin-top: -4px;
-    margin-left: 130px;
+    margin-left: 10px;
     background: url("../img/left_title_1.png") no-repeat;
 }
 
@@ -137,7 +148,11 @@ body{
 	padding: 0;
 	background: rgba(#eeebdf, 1);
     vertical-align:middle;
-    padding-top: 17px;
+    padding:0;
+}
+
+.right_side_container{
+    padding-left: 35px;
 }
 
 .right_text{
@@ -158,7 +173,7 @@ body{
    margin:0 auto 28px;
    width: 280px;
    position: relative;
-   padding-top: 5px;
+   padding:0;
 }
 
 .right_title:before{
@@ -195,13 +210,134 @@ body{
 	display: inline-block
 }
 
+/*----------diagrams---------------*/
+
+.svg_item{
+    display: inline-block;
+    position: relative;
+    margin-right: 37px;
+}
+.circle{
+    width: 110px;
+    height: 110px;
+}
+
+.bottom{
+    stroke-dashoffset: 0;
+    stroke: #dfdcd5;
+    stroke-width: 20px; 
+}
+
+.cover{
+    stroke: #e7a731;
+    transition: stroke-dashoffset 1.5s;
+    stroke-width: 20px;
+}
+
+.title_diagrams{
+    color: #5d5a55;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.skill{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size:14px;
+    color: #cd8920;
+    text-align: center;
+}
 
 
 /*--------maps---------------------*/
 
+#map{
+    width: 100%;
+    height: 974px;
+}
+
+.about_maps{
+    position: relative;
+}
+
+.maps_title_cont{
+    padding-top: 20px;
+}
+
 .maps_contact{
-	width: 100%;
-	height: 600px;
+    width: 380px;
+    height: 285px;
+    position: absolute;
+    z-index: 5;
+    top: 40%;
+    left: 40%;
+    background: rgba(#fff, 0.75);
+    
+}
+
+.maps_title{
+    color: #373e42;
+   font-family: "SansusWebissimoRegular", sans-serif;
+   font-size: 35px;
+   position: relative;
+   width: 50%;
+   text-align:center;
+   margin: auto;
+}
+
+
+.maps_title:before{
+    position: absolute;
+    content: '';
+    top: 50%;
+    margin-left: -50px;
+    width: 40px;
+    height: 14px;
+    margin-top: -4px;
+    background: url("../img/left_title_2.png");
+}
+
+.maps_title:after{
+    position: absolute;
+    content: '';
+    top: 50%;
+    width: 40px;
+    height: 14px;
+    margin-top: -4px;
+    margin-left: 10px;
+    background: url("../img/left_title_1.png") no-repeat;
+}
+
+.maps_nav{
+    list-style: none;
+    margin-left:40px;
+    padding: 0;
+}
+.maps_item{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    
+}
+
+.maps_item a{
+    text-decoration: none;
+}
+
+.skp,.evn,.marker,.phone{
+    width: 24px;
+    height: 24px;
+    fill: #e7a731;
+    padding-right: 20px;
+}
+
+.maps_cont_text{
+    font-family: "RobotoMedium", Arial, sans-serif;
+    font-size: 16px;
+    color: #858380;
+    vertical-align:top
 }
 
 @import 'common/_footer';

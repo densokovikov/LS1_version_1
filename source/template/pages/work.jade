@@ -21,17 +21,53 @@ main.my_work
 					svg.icon.link
 						use(xlink:href='assets/icons/sprite.svg#link') 
 	section.my_work_porfol
-		.porfol_container
-			img(src="../assets/img/portf.png")
+		ul.port_slider_list
+			li.port_slider_item.active
+				img(src="../assets/img/zar-photo.jpg" alt="portf")
+			li.port_slider_item
+				img(src="../assets/img/my_foto.jpg" alt="portf")
+			li.port_slider_item
+				img(src="../assets/img/portf.png" alt="portf")
 	section.my_work_nav
 		.nav_prev
 			//img.nav_prev_img(src="../accets/img/")
 		.nav_next		
 			//img.nav_prev_img
-	section.say_for_me
-		.for_me_block_container
-			.for_me_title_block
-				.for_me_title что говорят  обо мне
-		.for_me_text
-
+section.say_for_me
+	.for_me_block_container
+		.for_me_title_block
+			.for_me_title что говорят  обо мне
+				svg.icon.icon-about_header
+					use(xlink:href='assets/icons/sprite.svg#about_header') 
+		.for_me_item_common
+			.for_me_item_left
+				.quote
+				.for_me_item_text Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+				.for_me_comment
+					.for_me_comment_avatar
+						img.for_me_img(src="../assets/img/dima-photo.jpg")
+					.for_me_name		
+						.for_me_txt_title Ковальчук Дмитрий
+						.for_me_comment_txt основатель LoftSchool
+			.for_me_item_right
+				.quote
+				.for_me_item_text Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей! Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+				.for_me_comment
+					.for_me_comment_avatar
+						img.for_me_img(src="../assets/img/zar-photo.jpg")
+					.for_me_name		
+						.for_me_txt_title Ковальчук Дмитрий
+						.for_me_comment_txt основатель LoftSchool
+	.for_me_form
+		form.for_me_form_wrap
+			.for_me_form_bg
+			.for_me_form_cont_title
+				.for_me_form_title Связаться со мной
+				input.form_input_for_me(type="text" placeholder="Имя")
+				input.form_input_for_me(type="text" placeholder="E-mail")
+				textaria.form_text(type="text" placeholder="Ваше сообщение")
+				.contact_form_buttons
+					input.contact_form_b(type="submin"  value="Отправить")
+					input.contact_form_b(type="reset"  value="Очистить")
 include ../common/_footer
+

@@ -5,18 +5,20 @@ body{
   color: #fff;
   font-family: "RobotoMedium", Arial, sans-serif;
   position: relative;
+  background: url(../img/welcome_background.jpg) top left;
+  background-repeat: repeat-x;
+  background-size: cover;
   }
 $color_link:#fff;
 
 
 .wel_wrapper{
-  background: url(../img/welcome_background.jpg) top left;
-  background-repeat: repeat-x;
-  background-size: cover;
   height: 100%;
   position: relative;
-  display: flex;
-}
+  margin-bottom: -80px;
+  
+  }
+
 
 /*----auth-------*/
 .author{
@@ -25,10 +27,13 @@ $color_link:#fff;
   border: 1px solid #fff;
   text-align:center;
   font: 500 16px/43px roboto;
-  position: absolute;
-  top: 24px;
-  right: 100px;
+  position:relative;
+  float:right;
+  margin-bottom: 300px;
+  //top: 24px;
+  //right: 100px;
   border-radius:5px;
+  
 }
 
 .author:hover{
@@ -55,15 +60,20 @@ $color_link:#fff;
     position: relative;
     width: 380px;
     height: 395px;
-    margin: auto;
+    margin:auto;
+    padding:0;
     text-align:center;
     transform-origin: top center;
     transition: -webkit-transform 1s;
     transform-style: preserve-3d;
+    perspective: 1000px;
     color:$color_link;
+    transition: all 2s;
+       
 }
+
 .wel-info_front{
-  //position: absolute;
+  transform: rotateY(0deg);
   display: block; 
   z-index:2;
 }
@@ -71,12 +81,13 @@ $color_link:#fff;
 .wel-info_me_back{
     z-index: 1;
     transform: rotateY(180deg);
-    //position: absolute;
+    
 }
 
 
 .flap{
   transform: rotateY( 180deg );
+  transition: 2s;
 }
 .wel_com{
   backface-visibility: hidden;
@@ -93,6 +104,7 @@ $color_link:#fff;
 .clicked {
     opacity: 0;
     visibility: hidden;
+    transition: 1s;
 }
 
 .wel-info_front_foto{
@@ -121,11 +133,6 @@ $color_link:#fff;
 }
 
 /*-------welcome_icons---------*/
-//.wel_front_icons{
-  //position: absolute;
-  //left: 0;
-  //top: 0;
-//}
 
 .front_icons{
   list-style: none;
@@ -256,7 +263,7 @@ $color_link:#fff;
   margin-left: -5px;
 }
 .hitten_input{
-  //display: none
+  display: none
 }
 
 .svg_icons{
@@ -269,6 +276,7 @@ $color_link:#fff;
   width: 15px;
   height: 17px;
   padding-top:13px;
+  fill:rgba(#C4CBCD,1);
 }
 
 .form_man{
@@ -312,9 +320,9 @@ display: inline-block;
 .chk {
   width: 12px;
   height: 9px;
-  display: none;
+  display: block;
   fill:#fff;
-  padding-bottom:2px ;
+  padding:5px;
 }
 
         .radios_form{
@@ -384,10 +392,9 @@ display: inline-block;
 
 /*---footer-----*/
 .footer_welcome {
-  position: absolute;
-  left: 39%;
-  bottom: 2%;
+  height: 80px;
   text-align: center;
+  
 }
 
 .footer_welcome_text{
