@@ -6,33 +6,93 @@ body
 	<!--[if lt IE 7]>
 	<p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите его</a></p>
 	<![endif]-->
+//include ../common/_preloader	
 include ../common/_header
+
+.link_wrap
+	a.link(href="#blog_s")
+		svg.icon.arrowDown
+			use(xlink:href='assets/icons/sprite.svg#arrow_down')
 main.my_work
 	.my_work_title_block
 		.my_work_title Мои работы
 		svg.icon.works
 			use(xlink:href='assets/icons/sprite.svg#works_header') 
 	section.my_work_left
-		.left_conteiner
-			.left_title_w сайт бара "венеция"
-			.left_descr html,css,javascript
-			.conteiner_link
-				a.left_a(src="#") Просмотреть сайт
-					svg.icon.link
-						use(xlink:href='assets/icons/sprite.svg#link') 
+		ul.left_slider_descr_list
+			li.left_slider_descr_item.active
+				.left_conteiner
+					.left_title_w сайт бара "венеция"
+					.left_descr html,css,javascript
+					.conteiner_link
+						a.left_a(src="#") Просмотреть сайт
+							svg.icon.link
+								use(xlink:href='assets/icons/sprite.svg#link')
+			li.left_slider_descr_item
+				.left_conteiner
+					.left_title_w сайт бара "Милан"
+					.left_descr html,css,javascript
+					.conteiner_link
+						a.left_a(src="#") Просмотреть сайт
+							svg.icon.link
+								use(xlink:href='assets/icons/sprite.svg#link')
+			li.left_slider_descr_item
+				.left_conteiner
+					.left_title_w сайт бара "СПБ"
+					.left_descr html,css,javascript
+					.conteiner_link
+						a.left_a(src="#") Просмотреть сайт
+							svg.icon.link
+								use(xlink:href='assets/icons/sprite.svg#link')
+			li.left_slider_descr_item
+				.left_conteiner
+					.left_title_w сайт бара "Москва"
+					.left_descr html,css,javascript
+					.conteiner_link
+						a.left_a(src="#") Просмотреть сайт
+							svg.icon.link
+								use(xlink:href='assets/icons/sprite.svg#link')*/
+	
 	section.my_work_porfol
-		ul.port_slider_list
-			li.port_slider_item.active
-				img(src="../assets/img/zar-photo.jpg" alt="portf")
-			li.port_slider_item
-				img(src="../assets/img/my_foto.jpg" alt="portf")
-			li.port_slider_item
-				img(src="../assets/img/portf.png" alt="portf")
+		.slider__pictures-wrapper
+			img.port_slider_img(src="../assets/img/slider_1.png" alt="portf")
+
+
 	section.my_work_nav
-		.nav_prev
-			//img.nav_prev_img(src="../accets/img/")
-		.nav_next		
-			//img.nav_prev_img
+		.slider__move-btn.btn-up
+				ul.slider__pictures_list
+					li.slider__pict
+						img.slider__sites-pictures(src="../assets/img/slider_1.png")
+					li.slider__pict
+						.slider__pictures-wrapper
+						img.slider__sites-pictures(src="../assets/img/slider_2.png")
+					li.slider__pict
+						.slider__pictures-wrapper
+						img.slider__sites-pictures(src="../assets/img/slider_3.png")
+					li.slider__pict.active
+						.slider__pictures-wrapper
+						img.slider__sites-pictures(src="../assets/img/slider_4.png")
+				a.slider_nav.slider_nav_prev#sliderUp(href='#')
+					svg.icon.up
+						use(xlink:href='assets/icons/sprite.svg#portf_arrow_up')
+		.slider__move-btn.btn-down
+				ul.slider__pictures_list
+					li.slider__pict.active
+						img.slider__sites-pictures(src="../assets/img/slider_1.png")
+					li.slider__pict.active
+						.slider__pictures-wrapper
+						img.slider__sites-pictures(src="../assets/img/slider_2.png")
+					li.slider__pict
+						.slider__pictures-wrapper
+						img.slider__sites-pictures(src="../assets/img/slider_3.png")
+					li.slider__pict
+						.slider__pictures-wrapper
+						img.slider__sites-pictures(src="../assets/img/slider_4.png")
+				a.slider_nav.slider_nav_next#sliderDown(href='#')
+					svg.icon.down
+						use(xlink:href='assets/icons/sprite.svg#portf_arrow_down')
+
+
 section.say_for_me
 	.for_me_block_container
 		.for_me_title_block
@@ -65,7 +125,7 @@ section.say_for_me
 				.for_me_form_title Связаться со мной
 				input.form_input_for_me(type="text" placeholder="Имя")
 				input.form_input_for_me(type="text" placeholder="E-mail")
-				textaria.form_text(type="text" placeholder="Ваше сообщение")
+				textarea.form__text(placeholder='Ваше сообщение')
 				.contact_form_buttons
 					input.contact_form_b(type="submin"  value="Отправить")
 					input.contact_form_b(type="reset"  value="Очистить")

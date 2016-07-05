@@ -5,17 +5,36 @@ body{
   color: #fff;
   font-family: "RobotoMedium", Arial, sans-serif;
   position: relative;
-  background: url(../img/welcome_background.jpg) top left;
-  background-repeat: repeat-x;
-  background-size: cover;
-  }
+}
 $color_link:#fff;
 
+
+.animate {
+   width: 100%;
+   min-height: 650px;
+   height: 100%;
+   background: url("../img/sand.jpg");
+   background-size: cover;
+   animation: bgScroll 190s linear infinite;
+   background: url(../img/welcome_background.jpg) top left;
+   background-repeat: repeat-x;
+   background-size: cover;
+}
+
+@keyframes bgScroll {
+from {
+   background-position: 0 0;
+}
+to {
+  background-position: -3055px 0;
+}
+  }
 
 .wel_wrapper{
   height: 100%;
   position: relative;
   margin-bottom: -80px;
+  min-width: 320px;
   
   }
 
@@ -29,7 +48,8 @@ $color_link:#fff;
   font: 500 16px/43px roboto;
   position:relative;
   float:right;
-  margin-bottom: 300px;
+  margin-right:100px;
+  margin-top: 40px;
   //top: 24px;
   //right: 100px;
   border-radius:5px;
@@ -57,7 +77,11 @@ $color_link:#fff;
 
 /*-------wel_info-----------*/
  .wel-info{
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
     width: 380px;
     height: 395px;
     margin:auto;
@@ -403,3 +427,45 @@ font-family: "RobotoLight";
 color:$color_link;
 opacity: .8;
 }
+
+
+
+/*-----media_welcome----------*/
+
+@media screen and (max-width: 1200px) { //hd
+
+}
+
+@media screen and (max-width: 992px) { //laptop
+
+}
+
+@media screen and (max-width: 768px) { //tablets
+  .author{
+    width: 147px;
+    height: 40px;
+    top: 10px;
+    left: -26%;
+    
+  }
+
+  .author__link{
+    font-size: 14px;
+  }
+
+  .wel-info{
+    width: 302px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) { //phones
+  
+   .author{
+    top: 10px;
+    left:0;
+    
+  }
+
+}
+

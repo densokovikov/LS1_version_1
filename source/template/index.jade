@@ -2,10 +2,11 @@
 doctype html
 html
 include common/_head
-body
+body.animate
 	<!--[if lt IE 7]>
 	<p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите его</a></p>
 	<![endif]-->
+	//include common/_preloader
 	.wel_wrapper
 		.author
 			a(href="#").author__link Авторизироваться
@@ -61,7 +62,7 @@ body
 							label.radio_f(for='no') Не уверен
 				ul.form_nav
 					li.form_nav_list
-						a#main.link_form(href='index.html') На главную
+						span.link_form(href='#') На главную
 					li.form_nav_list
 						a.link_form(href='#!') Войти
 	.footer_welcome
