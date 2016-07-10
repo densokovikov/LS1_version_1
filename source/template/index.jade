@@ -9,7 +9,7 @@ body.animate
 	//include common/_preloader
 	.wel_wrapper
 		.author
-			a(href="#").author__link Авторизироваться
+			a.author__link Авторизироваться
 		.wel-info
 			.wel-info_front.wel_com
 						.wel-info_front_foto
@@ -19,25 +19,25 @@ body.animate
 						.wel_front_icons
 							ul.front_icons
 								li.icons_item
-									a.icons_item_link(href="https://vk.com")
-									svg.icon.vk
-										use(xlink:href='assets/icons/sprite.svg#vk')
+									a.icons_item_link(href="https://vk.com" target="_blank")
+										svg.icon.vk
+											use(xlink:href='assets/icons/sprite.svg#vk')
 								li.icons_item
-									a.icons_item_link(href="https://githab.com")
-									svg.icon.vk
-										use(xlink:href='assets/icons/sprite.svg#github')
+									a.icons_item_link(href="https://githab.com" target="_blank")
+										svg.icon.vk
+											use(xlink:href='assets/icons/sprite.svg#github')
 								li.icons_item
-									a.icons_item_link(href="https://www.linkedin.com")
-									svg.icon.vk
-										use(xlink:href='assets/icons/sprite.svg#in')
+									a.icons_item_link(href="https://www.linkedin.com" target="_blank")
+										svg.icon.vk
+											use(xlink:href='assets/icons/sprite.svg#in')
 						.wel_menu
 							ul.wel_menu_nav
 								li.wel_menu_item
-									a.wel_menu_link(href="work.html") Мои работы
+									a.wel_menu_link(href="work.html" target="_blank") Мои работы
 								li.wel_menu_item
-									a.wel_menu_link(href="about.html") Обо мне
+									a.wel_menu_link(href="about.html" target="_blank") Обо мне
 								li.wel_menu_item
-									a.wel_menu_link(href="blog.html") Блог
+									a.wel_menu_link(href="blog.html" target="_blank") Блог
 			.wel-info_me_back.wel_com
 				.form_title_wel Авторизируйтесь
 				form.form_author_wel
@@ -62,9 +62,9 @@ body.animate
 							label.radio_f(for='no') Не уверен
 				ul.form_nav
 					li.form_nav_list
-						span.link_form(href='#') На главную
+						a.link_form На главную
 					li.form_nav_list
-						a.link_form(href='#!') Войти
+						a.link_form(href='#!' target="_blank") Войти
 	.footer_welcome
 		.footer_welcome_text ©Денис Соковиков | создано с любовью в LoftSchol 	|2016
 		

@@ -432,7 +432,8 @@ opacity: .8;
 
 /*-----media_welcome----------*/
 
-@media screen and (max-width: 1200px) { //hd
+@media screen and (max-width: 1199px) { //hd
+  
 
 }
 
@@ -457,6 +458,9 @@ opacity: .8;
     width: 302px;
     font-size: 14px;
   }
+  .form_input {
+    width: 150px;
+  }
 }
 
 @media screen and (max-width: 480px) { //phones
@@ -467,5 +471,8 @@ opacity: .8;
     
   }
 
+  .form_input {
+    width: 150px;
+  }
 }
 

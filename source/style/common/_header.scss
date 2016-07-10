@@ -9,12 +9,14 @@
 }
 
 .portfolio_header{
-	width: 1176px;
-    height: 313px;
-    top: 11%;
-    left: 18%;
+	min-width: 100%;//1176px;
+  height: 313px;
+  top: 30%;
+  left: 50%;
+  margin: auto;
 	position: absolute;
 	fill: rgba(205, 137, 32, 0.1);
+  transform: translate(-50%, -50%);
 }
 
 .header_info_me{
