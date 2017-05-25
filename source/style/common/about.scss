@@ -268,7 +268,8 @@ body{
 
 #map{
     width: 100%;
-    height: 974px;
+    height: 100vh;
+    //min-height: 974px;
 }
 
 .about_maps{
@@ -369,7 +370,7 @@ body{
 
 
 
-@media (max-width: 768px) and (min-width: 426px) and (min-width: 320px) {
+@media (max-width: 768px) and (min-width: 426px){
 .left_side,.right_side{
     float: none;
     width: 100%;
@@ -378,7 +379,7 @@ body{
     margin: 0;
   }
 .about_section {
-    //padding-top: 52px;
+    padding-top: 52px;
     background: #EEEBDF;
     height: auto;
   }
@@ -403,6 +404,10 @@ body{
  width: 90%;
  margin: auto;   
  }
+
+#map{
+ height: 500px;   
+ }
 }
 
 
@@ -416,4 +421,45 @@ body{
   }
 
 
+}
+
+
+@media (max-width: 320px){
+.left_side,.right_side{
+    float: none;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    margin: 0;
+  }
+.about_section {
+    background: #EEEBDF;
+    height: auto;
+  }
+
+.left_title,.right_title{
+    float: none;
+    margin:30px auto;
+    font-size: 35px;
+    background: #EEEBDF;
+    
+  }
+
+.left_info_me,.right_side_container{
+    margin:0 auto;
+    width: 100%;
+    text-align:center;
+    padding: 0;
+    
+ }
+
+.left_text{
+ width: 90%;
+ margin: auto;   
+ }
+
+ #map{
+ height: 500px;   
+ }
+    
 }

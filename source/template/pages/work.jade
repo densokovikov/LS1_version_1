@@ -1,6 +1,6 @@
 //- work.jade
 doctype html
-html
+html(lang="ru-RU" data-livestyle-extension="available")
 include ../common/_head
 body
 	<!--[if lt IE 7]>
@@ -18,6 +18,11 @@ main.my_work
 		.my_work_title Мои работы
 		svg.icon.works
 			use(xlink:href='assets/icons/sprite.svg#works_header') 
+	
+	section.my_work_porfol
+		.slider__pictures-wrapper
+			img.port_slider_img(src="../assets/img/slider_1.png" alt="portf")
+
 	section.my_work_left
 		ul.left_slider_descr_list
 			li.left_slider_descr_item.active
@@ -53,11 +58,6 @@ main.my_work
 							svg.icon.link
 								use(xlink:href='assets/icons/sprite.svg#link')*/
 	
-	section.my_work_porfol
-		.slider__pictures-wrapper
-			img.port_slider_img(src="../assets/img/slider_1.png" alt="portf")
-
-
 	section.my_work_nav
 		.slider__move-btn.btn-up
 				ul.slider__pictures_list
@@ -120,7 +120,7 @@ section.say_for_me
 						.for_me_comment_txt основатель LoftSchool
 	.for_me_form
 		form.for_me_form_wrap
-			.for_me_form_bg
+			.for_me_form_bg_blur
 			.for_me_form_cont_title
 				.for_me_form_title Связаться со мной
 				input.form_input_for_me(type="text" placeholder="Имя")

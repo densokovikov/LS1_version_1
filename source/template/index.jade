@@ -1,6 +1,6 @@
 //- welcome.jade
 doctype html
-html
+html(lang="ru-RU" data-livestyle-extension="available")
 include common/_head
 body.animate
 	<!--[if lt IE 7]>
@@ -9,7 +9,7 @@ body.animate
 	//include common/_preloader
 	.wel_wrapper
 		.author
-			a.author__link Авторизироваться
+			a.author__link тест
 		.wel-info
 			.wel-info_front.wel_com
 						.wel-info_front_foto
@@ -33,11 +33,11 @@ body.animate
 						.wel_menu
 							ul.wel_menu_nav
 								li.wel_menu_item
-									a.wel_menu_link(href="work.html" target="_blank") Мои работы
+									a.wel_menu_link(href="work.html" ) Мои работы
 								li.wel_menu_item
-									a.wel_menu_link(href="about.html" target="_blank") Обо мне
+									a.wel_menu_link(href="about.html" ) Обо мне
 								li.wel_menu_item
-									a.wel_menu_link(href="blog.html" target="_blank") Блог
+									a.wel_menu_link(href="blog.html" ) Блог
 			.wel-info_me_back.wel_com
 				.form_title_wel Авторизируйтесь
 				form.form_author_wel
@@ -52,8 +52,12 @@ body.animate
 								svg.icon.pass
 									use(xlink:href='assets/icons/sprite.svg#password')			
 							input(type="password" class="form_input" placeholder="password")
-						input#man(type="checkbox" class="hitten_input" placeholder="логин")
-						label.form_man(for='man') <span class="form_check_icons"><svg class="icon chk"><use xlink:href="assets/icons/sprite.svg#check"></use></svg></span> Я человек
+						input#man(type="checkbox" class="hitten_input")
+						label.form_man(for='man')
+							span.form_check_icons
+								svg.icon.chk
+									use(xlink:href="assets/icons/sprite.svg#check")
+							span.form_check_text я человек 
 						.robot Вы точно не робот
 						.radios_form
 							input#yes(type='radio' name='sure' value='yes')

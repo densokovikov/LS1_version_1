@@ -65,7 +65,7 @@ to {
 }
 
 
-.author__link{
+.autoriz__link{
   text-decoration: none;
   display: block;
   color: #fbf9f5;
@@ -286,9 +286,6 @@ to {
   margin-bottom:2px;
   margin-left: -5px;
 }
-.hitten_input{
-  display: none
-}
 
 .svg_icons{
   width: 12px;
@@ -303,24 +300,56 @@ to {
   fill:rgba(#C4CBCD,1);
 }
 
+.hitten_input{
+  display: none;
+}
+
 .form_man{
   width: 100%;
   vertical-align:top;
   padding-bottom: 20px;
+  position: relative;
+  cursor:pointer;
 }
-.form_check_icons{
-content: '';
-display: inline-block;
-width: 21px;
-height: 20px;
-margin-right: 11px;
-margin-bottom: 10px;
-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.8);
-background-color: transparent;
-border-radius: 2px;
-color: #fff;
-display: inline-block;
+
+.form_man .form_check_icons{
+    content: '';
+    display: inline-block;
+    width: 21px;
+    height: 20px;
+    margin-right: 11px;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.8);
+    background-color: transparent;
+    border-radius: 2px;
+    color: #fff;
+    transition: all .2s;
 }
+
+#man:checked + .form_man .form_check_icons{
+    border: 0;
+    background-color: #e7a731;
+    box-shadow: none;
+}
+
+.form_man .form_check_icons .chk{
+  width: 12px;
+  height: 9px;
+  padding:5px;
+  display: none;
+}
+
+#man:checked + .form_man .form_check_icons .chk{
+  fill:#fff;
+  display: block;
+}
+
+.form_check_text{
+  color: #fff;
+  font-family: "RobotoLight", Arial, sans-serif;
+  vertical-align:top;
+  text-transform: uppercase;
+}
+
 
 
 .robot{
@@ -340,14 +369,6 @@ display: inline-block;
   box-shadow: none;
 }
 
-
-.chk {
-  width: 12px;
-  height: 9px;
-  display: block;
-  fill:#fff;
-  padding:5px;
-}
 
         .radios_form{
           cursor: default;
